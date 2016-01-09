@@ -1,0 +1,85 @@
+.slider-team{
+  padding-top: 37px;
+  padding-bottom: 145px;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: 312px;
+  &__item{
+    display: inline-block;
+    vertical-align: bottom;
+    min-width: 310px;
+    margin-right: 5px;
+    position: relative;
+    &:nth-child(3){
+      margin-right: 0;
+    }
+    &-title{
+      font-size: @font-30;
+      color: @blue-3;
+      margin: 0;
+      margin-top: 37px;
+      margin-bottom: 14px;
+    }
+    &-description{
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 21px;
+      text-transform: uppercase;
+    }
+    &-hover{
+      bottom: 150px;
+      left: 0;
+      position: absolute;
+      font-size: 14px;
+      line-height: 20px;
+      display: block;
+      color: #FFF;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 43px 30px;
+    }
+  }
+  &__social{
+    &-btn{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      background: @yellow url("../img/sprites.png") no-repeat -2948px -10px;
+      &--fb{
+        background-position: -2936px -2px; 
+      }
+      &--twitter{
+        background-position: -2979px -3px;
+      }
+      &--in{
+        background-position: -3027px -3px;
+      }
+    }
+  }
+  &__controls{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+    &-item{
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: top;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+      margin-right: 5px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &--active{
+      background-color: #bababa;
+    }
+  }
+}

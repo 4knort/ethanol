@@ -1,0 +1,46 @@
+.company-title{
+  text-align: center;
+  position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      bottom: 24px;
+      right: 0;
+      width: 46%;
+      height: 2px;
+      background-color: #eee;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: 24px;
+      left: 0;
+      width: 46%;
+      height: 2px;
+      background-color: #eee;
+    }
+  &__header{
+    text-transform: uppercase;
+    font-size: @font-30;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  &__point{
+    color: @yellow;
+  }
+  &__description{
+    color: @grey-9;
+    font-size: @font-22;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 37px;
+  }
+  &__logo{
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    background: url("../img/sprites.png") no-repeat -775px -10px;
+  }
+}

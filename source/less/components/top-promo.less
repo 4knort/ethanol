@@ -1,0 +1,39 @@
+.top-promo{
+  padding-top: 242px;
+  padding-bottom: 256px;
+  background: url(../img/bg-top.jpg) no-repeat;
+  background-size: cover;
+  &__title{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 116px;
+    margin-bottom: 35px;
+    color: @yellow;
+  }
+  &__text{
+    padding-left: 108px;
+    font-size: @font-22;
+    color: #FFF;
+    margin-bottom: 130px;
+  }
+  &__link{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 30px;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      left: -6px;
+      bottom: 0;
+      width: 98%;
+      height: 5px;
+      background-color: @yellow;
+    }
+  }
+}

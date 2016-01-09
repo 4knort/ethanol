@@ -1,0 +1,96 @@
+.services-item{
+  display: inline-block;
+  vertical-align: top;
+  width: 290px;
+  padding-right: 145px;
+  text-align: right;
+  margin-bottom: 62px;
+  position: relative;
+  color: @grey-9;
+  &:nth-child(1n){
+    margin-right: 40px;
+  }
+  &:nth-child(2n){
+    padding-right: 0;
+    padding-left: 145px;
+    text-align: left;
+    margin-right: 0;
+  }
+  &__title{
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  &__description{
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &--brand{
+    &:after{
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 123px;
+      top: -12px;
+      right: -5px;
+      background: url("../img/sprites.png") no-repeat -2048px -10px;
+    }
+  }
+  &--graphic{
+    &:after{
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 123px;
+      top: -12px;
+      right: -5px;
+      background: url("../img/sprites.png") no-repeat -2348px -10px;
+    }
+  }
+  &--illustration{
+    &:after{
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 123px;
+      top: -12px;
+      right: -5px;
+      background: url("../img/sprites.png") no-repeat -2648px -10px;
+    }
+  }
+  &--design{
+    &:before{
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 123px;
+      top: -12px;
+      left: -9px;
+      background: url("../img/sprites.png") no-repeat -2198px -10px;
+    }
+  }
+  &--mobile{
+    &:before{
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 123px;
+      top: -12px;
+      left: -9px;
+      background: url("../img/sprites.png") no-repeat -2498px -10px;
+    }
+  }
+  &--video{
+    &:before{
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 123px;
+      top: -12px;
+      left: -9px;
+      background: url("../img/sprites.png") no-repeat -2798px -10px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.company-description{
+  background-color: @yellow;
+  padding-top: 110px;
+  padding-bottom: 142px;
+  &__logo{
+    display: block;
+    width: 110px;
+    padding-left: 55px;
+    margin: 0 auto;
+    font-size: 35px;
+    color: #FFF;
+    position: relative;
+    margin-bottom: 67px;
+    &:before{
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 3px;
+      width: 46px;
+      height: 44px;
+      background: url("../img/sprites.png") no-repeat -841px -10px;;
+    }
+  }
+  &__text{
+    color: #FFF;
+    width: 700px;
+    margin: 0 auto;
+    font-size: @font-22;
+    line-height: @line-30;
+    text-align: center;
+  }
+}
