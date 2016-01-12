@@ -1,0 +1,96 @@
+.post-preview{
+  display: inline-block;
+  vertical-align: top;
+  width: 460px;
+  box-sizing: border-box;
+  background-color: #FFF;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e4e4;
+  padding-top: 11px;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 18px;
+    left: 20px;
+    background: url("../img/blog-item1.png");
+  }
+  &:nth-child(2n){
+    margin-right: 0;
+  }
+  &:nth-last-child(1),
+  &:nth-last-child(2){
+    margin-bottom: 0;
+  }
+  &__description{
+    padding-left: 192px;
+    margin-bottom: 23px;
+    padding-right: 20px;
+  }
+  &__date{
+    font-size: 11px;
+    color: @grey-9;
+  }
+  &__title{
+    font-size: @font-16;
+    margin: 0;
+    margin-bottom: 6px;
+    line-height: 20px;
+    color: #666;
+  }
+  &__text{
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    color: @grey-9;
+  }
+  &__info{
+    border-top: 1px solid #e5e4e4;
+  }
+  &__navigation{
+    padding: 7px 20px;
+  }
+  &__navigation-list{
+    margin: 0;
+    list-style-type: none;
+    float: left;
+    width: 300px;
+    font-size: 0;
+    padding: 0;
+  }
+  &__navigation-item{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    margin-right: 7px;
+  }
+  &__navigation-link{
+    margin-right: 8px;
+    color: @yellow;
+  }
+  &__rating{
+    display: block;
+    float: right;
+    width: 75px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    background-color: @grey-f3;
+    padding: 2px 8px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 25px;
+      top: -6px;
+      left: 4px;
+      background: url("../img/sprites.png") no-repeat;
+    }
+  }
+}
