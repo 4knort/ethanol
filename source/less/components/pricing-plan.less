@@ -1,0 +1,112 @@
+.pricing-plan{
+  display: inline-block;
+  vertical-align: middle;
+  &--best{
+    padding-bottom: 11px;
+  }
+  &__title{
+    font-size: @font-22;
+    color: #FFF;
+    background-color: @blue-3;
+    padding: 36px 98px;
+    margin: 0;
+    text-transform: uppercase;
+    &--left{
+      border-radius: 5px 0 0 0;
+    }
+    &--right{
+      border-radius: 0 5px 0 0;
+    }
+    &--best{
+      background-color: @yellow;
+      border-radius: 5px 5px 0 0;
+      padding: 36px 86px;
+    }
+  }
+  &__price{
+    font-size: 0;
+    padding-top: 39px;
+    padding-bottom: 14px;
+    text-align: center;
+    &--best{
+      padding-bottom: 34px;
+      border: 1px solid @yellow;
+      border-top: none;
+    }
+    &--left{
+      border-left: 1px solid @blue-3;
+      border-bottom: 1px solid @blue-3;
+    }
+    &--right{
+      border-right: 1px solid @blue-3;
+      border-bottom: 1px solid @blue-3;
+    }
+    &-element{
+      display: inline-block;
+      vertical-align: baseline;
+      color: #666;
+      &:nth-child(1){
+        font-size: 65px;
+        font-weight: bold;
+        position: relative;
+        padding-left: 53px;
+        &:after{
+          content: "$";
+          font-size: 40px;
+          position: absolute;
+          top: -6px;
+          left: 23px;
+        }
+      }
+      &:nth-child(2){
+        font-size: 26px;
+        vertical-align: baseline;
+      }
+    }
+  }
+  &__description{
+    padding-top: 16px;
+    padding-bottom: 11px;
+    &--best{
+      border: 1px solid @yellow;
+      border-top: none;
+      border-radius: 0 0 5px 5px;
+    }
+    &--left{
+      border-left: 1px solid @blue-3;
+      border-bottom: 1px solid @blue-3;
+      border-radius: 0 0 0 5px;
+    }
+    &--right{
+      border-right: 1px solid @blue-3;
+      border-bottom: 1px solid @blue-3;
+      border-radius: 0 0 5px 0;
+    }
+    &-item{
+      font-size: 14px;
+      color: @grey-9;
+      display: block;
+      text-align: center;
+      margin-bottom: 16px;
+      &--best{
+        margin-bottom: 42px;
+      }
+    }
+  }
+  &__btn{
+    text-align: center;
+    padding: 12px 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: @blue-3;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 22px;
+    border-radius: 5px;
+    &--best{
+      background-color: @yellow;
+    }
+  }
+}
