@@ -582,13 +582,13 @@
             </a>
           </div>
         </div>
-        <form action="" class="contacts-form">
+        <form action="/echo" class="form" method="post">
           <div class="contacts-form__input-wrap">
-            <input type="text" class="contacts-form__input" placeholder="Your Name">
-            <input type="text" class="contacts-form__input" placeholder="Your Email">
-            <input type="text" class="contacts-form__input" placeholder="Subject">
+            <input type="text" class="contacts-form__input" placeholder="Your Name" name="name">
+            <input type="text" class="contacts-form__input" placeholder="Your Email" name="mail">
+            <input type="text" class="contacts-form__input" placeholder="Subject" name="subject">
           </div>
-          <textarea name="" class="contacts-form__area" cols="30" rows="10" class="contacts-form__area" placeholder="Your Message"></textarea>
+          <textarea name="" class="contacts-form__area" cols="30" rows="10" class="contacts-form__area" placeholder="Your Message" name="message"></textarea>
           <input type="submit" class="contacts-form__btn" value="Send">
         </form>
       </div>
