@@ -1,0 +1,36 @@
+.contacts-item{
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 18px;
+  padding-top: 140px;
+  margin-right: 89px;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 123px;
+    top: 0;
+    left: 50px;
+    background: url("../img/sprites.png") no-repeat 0 0;
+  }
+  &--adress:before{
+    background-position: -47px -10px;
+  }
+  &--mail:before{
+    background-position: -197px -10px;
+  }
+  &--tel:before{
+    background-position: -347px -10px;
+  }
+  &:nth-child(3n){
+    margin-right: 0;
+  }
+  &__text{
+    display: block;
+    color: #666;
+    width: 240px;
+    text-align: center;
+    min-height: 48px;
+  }
+}
